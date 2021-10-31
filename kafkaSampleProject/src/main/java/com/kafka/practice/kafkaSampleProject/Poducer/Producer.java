@@ -16,7 +16,7 @@ public class Producer {
 	@Autowired
 	KafkaTemplate<String, Employee> kafkaTemplate;
 
-	private String topicName = "TOPIC_INDITEX_JSON";
+	private String topicName = "TOPIC";
 
 	@GetMapping("/add/{name}")
 	public String addMessageToKafka(@PathVariable("name") String name) {
